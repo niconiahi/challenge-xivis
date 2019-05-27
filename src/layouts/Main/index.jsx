@@ -8,6 +8,7 @@ import routes from './_.routing'
 // Components
 import TopBar from 'components/_layouts/Main/TopBar'
 import OptionsBar from 'components/_layouts/Main/OptionsBar'
+import GoBackButton from 'components/_layouts/Main/GoBackButton'
 
 // Pages
 import CartPage from 'pages/Main/Cart'
@@ -17,7 +18,7 @@ const MainLayout = ({ match }) => {
   return (
     <content css={styles}>
       <TopBar />
-      {match.url === '/detail' ? null : <OptionsBar />}
+      {match.url === '/detail' ? <GoBackButton /> : <OptionsBar />}
       <main css={match.url === '/cart' ? cart_page_sizing : detail_page_sizing}>
         <Switch>
           <Route
