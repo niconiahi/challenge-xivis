@@ -23,12 +23,12 @@ export const styles = css`
   button {
     padding: 0.3rem;
     background-color: transparent;
-  }
-
-  button,
-  select,
-  input {
     color: ${colors.blue};
     border: 2px solid ${colors.red_error};
+  }
+
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
 `

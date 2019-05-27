@@ -27,7 +27,7 @@ export const bottom_container = css`
   justify-content: flex-end;
 
   p {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: ${colors.red_error};
     font-weight: bold;
     margin-right: 0.8rem;
